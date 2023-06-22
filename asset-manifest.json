@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Hangman/static/css/main.eb22868d.css",
-    "main.js": "/Hangman/static/js/main.fea53437.js",
-    "index.html": "/Hangman/index.html",
-    "main.eb22868d.css.map": "/Hangman/static/css/main.eb22868d.css.map",
-    "main.fea53437.js.map": "/Hangman/static/js/main.fea53437.js.map"
+    "main.css": "/hangman-konami-code/static/css/main.eb22868d.css",
+    "main.js": "/hangman-konami-code/static/js/main.fea53437.js",
+    "index.html": "/hangman-konami-code/index.html",
+    "main.eb22868d.css.map": "/hangman-konami-code/static/css/main.eb22868d.css.map",
+    "main.fea53437.js.map": "/hangman-konami-code/static/js/main.fea53437.js.map"
   },
   "entrypoints": [
     "static/css/main.eb22868d.css",
