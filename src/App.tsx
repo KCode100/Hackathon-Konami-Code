@@ -5,7 +5,7 @@ import HangmanWord from './components/HangmanWord';
 import words from "./wordList.json"
 import Keyboard from './components/Keyboard';
 import Hint from './components/Hint';
-import ConfettiExplosion from 'react-confetti-explosion';
+import Celebration from './components/Celebration';
 
 function getWord(): string {
   return words[Math.floor(Math.random() * words.length)]
@@ -31,16 +31,7 @@ const App: FC = () => {
   return (
     <>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-      {isWinner && (
-        <div className='confetti-explosion'>
-          <ConfettiExplosion 
-            force={0.8}
-            duration={3000}
-            particleCount={250}
-            width={1600}
-          />
-        </div>
-      )}
+      {isWinner && <Celebration />}
       <HangmanWord wordToGuess={wordToGuess} guessedLetters={guessedLetters} />
       <Keyboard guessedLetters={guessedLetters} addGuessedLetter={addGuessedLetter} disabled={isWinner || isLoser} />
       <Hint wordToGuess={wordToGuess} />
