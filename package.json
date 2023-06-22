@@ -1,7 +1,7 @@
 {
-  "name": "typescript-practice",
+  "name": "hangman-konami-code",
   "version": "0.1.0",
-  "homepage": "https://kcode100.github.io/Hangman/",
+  "homepage": "https://kcode100.github.io/hangman-konami-code/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
