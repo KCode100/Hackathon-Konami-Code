@@ -1,0 +1,48 @@
+.hangman-letters_wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 30px;
+  margin: auto;
+  min-height: 100px;
+}
+
+.hangman-letter {
+  min-width: 60px;
+  border-bottom: 8px solid black;
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.keyboard-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: auto;
+}
+
+.keyboard_key {
+  border: 1px solid black;
+  padding: 8px 4px;
+  width: 8%;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.keyboard_key:disabled {
+  border: none;
+  cursor: not-allowed;
+}
+
+.keyboard_key:hover:enabled {
+  background-color: royalblue;
+  color: white;
+}

@@ -1,12 +1,28 @@
-import React, {FC} from 'react';
+import {FC, useState} from 'react';
+import HangmanDrawing from './components/HangmanDrawing';
 import './App.css';
-import Profile, { HairColor } from './components/Profile';
+import HangmanWord from './components/HangmanWord';
+import words from "./wordList.json"
+import Keyboard from './components/Keyboard';
+
+function getWord(): string {
+  return words[Math.floor(Math.random() * words.length)]
+}
 
 const App: FC = () => {
+  const [wordToGuess, setWordToGuess] = useState(getWord)
+  const [guessedLetters, setGuessedLetters] = useState<string[]>([])
+  
+  function addGuessedLetter(newLetter: string): void {
+    setGuessedLetters(prev => [...prev, newLetter])
+  }
+
   return (
-    <h1 className="App">
-      <Profile name='Kivi Corn' age={29} email='kivi.webdev@gmail.com' isMarried={true} hairColor={HairColor.Pink} shul='Avreichim' />
-    </h1>
+    <>
+      <HangmanDrawing />
+      <HangmanWord wordToGuess={wordToGuess} guessedLetters={guessedLetters} />
+      <Keyboard guessedLetters={guessedLetters} addGuessedLetter={addGuessedLetter} />
+    </>
   );
 }
 
