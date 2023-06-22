@@ -30,16 +30,17 @@ const KEYS = [
 type KeyboardProps = {
   guessedLetters: string[]
   addGuessedLetter: (letter: string) => void
+  disabled: boolean
 }
 
-const Keyboard = ({ guessedLetters, addGuessedLetter }: KeyboardProps) => {
+const Keyboard = ({ guessedLetters, addGuessedLetter, disabled }: KeyboardProps) => {
   return ( 
     <div className="keyboard-wrapper">
       {KEYS.map(key => (
         <button
           key={key}
           className="keyboard_key"
-          disabled={guessedLetters.includes(key)}
+          disabled={disabled || guessedLetters.includes(key)}
           onClick={() => addGuessedLetter(key)}
         >
           {key}
