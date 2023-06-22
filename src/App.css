@@ -46,3 +46,9 @@
   background-color: royalblue;
   color: white;
 }
+
+.confetti-explosion {
+  display: block;
+  margin: auto;
+  width: 200px;
+}

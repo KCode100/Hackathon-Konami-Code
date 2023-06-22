@@ -93,7 +93,67 @@ const BODY = (
   }></div>
 )
 
-const DRAWING_PARTS = [ BASE, POLE, TOP, CORNER, ROPE, HEAD, BODY ]
+const RIGHT_ARM = (
+  <div key='RIGHT_ARM' style={
+    {
+      position: 'absolute',
+      height: '40px',
+      width: '5px',
+      backgroundColor: '#777',
+      borderRadius: '8px',
+      top: '90px',
+      left: '76%',
+      rotate: '45deg'
+    }
+  }></div>
+)
+
+const LEFT_ARM = (
+  <div key='LEFT_ARM' style={
+    {
+      position: 'absolute',
+      height: '40px',
+      width: '5px',
+      backgroundColor: '#777',
+      borderRadius: '8px',
+      top: '90px',
+      left: '66%',
+      rotate: '-45deg'
+    }
+  }></div>
+)
+
+const LEFT_LEG = (
+  <div key='LEFT_LEG' style={
+    {
+      position: 'absolute',
+      height: '40px',
+      width: '5px',
+      backgroundColor: '#777',
+      borderRadius: '8px',
+      top: '160px',
+      left: '67%',
+      rotate: '45deg'
+    }
+  }></div>
+)
+
+const RIGHT_LEG = (
+  <div key='RIGHT_LEG' style={
+    {
+      position: 'absolute',
+      height: '40px',
+      width: '5px',
+      backgroundColor: '#777',
+      borderRadius: '8px',
+      top: '160px',
+      left: '75%',
+      rotate: '-45deg'
+    }
+  }></div>
+)
+
+const DRAWING_PARTS = [ BASE, POLE, TOP, CORNER, ROPE, HEAD, BODY, RIGHT_ARM, LEFT_ARM, LEFT_LEG, RIGHT_LEG ]
 
 type HangmanDrawingProps = {
   numberOfGuesses: number
