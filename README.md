@@ -25,6 +25,14 @@ If using React make sure to run “npm run build” to create a build directory.
 
 The directory does not need to be called “build”, it can be anything e.g. “public” “dist” etc.
 
+Also make sure your package.json (if you have one) the value for the “homepage” property is “./”
+
+
+```
+"homepage": "./",
+```
+
+
 Run the following commands in the root of your codebase.
 
 npm init @capacitor/app
