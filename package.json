@@ -1,9 +1,13 @@
 {
   "name": "hangman-konami-code",
   "version": "0.1.0",
-  "homepage": "https://kcode100.github.io/hangman-konami-code/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^5.1.1",
+    "@capacitor/cli": "^5.1.1",
+    "@capacitor/core": "^5.1.1",
+    "@capacitor/ios": "^5.1.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
